@@ -877,7 +877,7 @@ static int wusb3801_tcpcdev_init(struct wusb3801_chip *chip, struct device *dev)
 	return 0;
 }
 
-static uint8_t dev_sub_id;
+static uint8_t __maybe_unused dev_sub_id;
 static inline int wusb3801_check_revision(struct i2c_client *client)
 {
 	int rc;
